@@ -1,0 +1,10 @@
+package com.kkp.modular.gun;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "modulargun", name = "Modular Guns: Customizable Guns in Minecraft!", version = "v0.01")
+public class ModularGun {
+	
+	
+
+}

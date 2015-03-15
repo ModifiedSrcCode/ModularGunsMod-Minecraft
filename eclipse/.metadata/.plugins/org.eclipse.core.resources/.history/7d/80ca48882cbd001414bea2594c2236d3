@@ -1,0 +1,16 @@
+package com.kkp.proj.warfare.common.weapon.ranged;
+
+import com.kkp.proj.warfare.PWUtil;
+
+
+/*  These are only the functions that the weapon itself can have.
+ * 
+ */
+
+public class PWRanged {
+	
+	public boolean canShootGrenades;
+	public boolean isGun;
+	
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
+<fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiScreen"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemSword"/>
+<fullyQualifiedTypeName name="com.kkp.proj.warfare.common.weapon.ranged.PWRanged"/>
+<fullyQualifiedTypeName name="com.kkp.proj.warfare.common.weapon.melee.PWMelee"/>
+<fullyQualifiedTypeName name="com.kkp.proj.warfare.PWUtil"/>
+<fullyQualifiedTypeName name="com.kkp.proj.warfare.common.item.PWItem"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.lederpykewlaid.modulargun.client.model.ModelGun"/>
+<fullyQualifiedTypeName name="com.lederpykewlaid.modulargun.client.model.ModelM4"/>
+</qualifiedTypeNameHistroy>
