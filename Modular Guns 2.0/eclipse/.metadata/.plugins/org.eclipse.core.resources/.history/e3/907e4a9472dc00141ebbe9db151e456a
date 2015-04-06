@@ -1,0 +1,53 @@
+package com.kkp.mg2.render;
+
+import org.lwjgl.opengl.GL11;
+
+import com.kkp.mg2.weaponry.ItemGun;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.IItemRenderer;
+
+public class RenderGun implements IItemRenderer {
+
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type) 
+	{
+		switch (type.ordinal()) 
+		{
+    		case 1: 
+    		case 2: 
+    		return true;
+		}
+	    
+		return false;
+	}
+
+	@Override
+	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) {
+		
+		return false;
+		
+	}
+
+	@Override
+	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+		
+		AbstractClientPlayer clientPlayer = Minecraft.getMinecraft().thePlayer;
+		ItemGun theGun = (ItemGun)item.getItem();
+		
+		switch (type.ordinal())
+		{
+		case 1:
+		case 2:
+			
+			GL11.glPushMatrix();
+			
+			Minecraft.getMinecraft().renderEngine.bindTexture(theGun.texture);
+			
+		}
+		
+	}
+
+}

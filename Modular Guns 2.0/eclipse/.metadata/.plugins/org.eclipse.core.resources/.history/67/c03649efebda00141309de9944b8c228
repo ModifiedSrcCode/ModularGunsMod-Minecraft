@@ -1,0 +1,45 @@
+package com.kkp.mg2;
+
+import com.kkp.mg2.registry.GunHandler;
+import com.kkp.mg2.weaponry.ItemGun;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+
+@Mod(modid = ModularGuns2.MODID, name = ModularGuns2.NAME, version = ModularGuns2.VERSION)
+public class ModularGuns2 {
+	
+	public static final String MODID = "mg2";
+	public static final String NAME = "Modular Guns 2.0";
+	public static final String VERSION = "2.0.0";
+	public GunHandler gunHandler;
+	public Item item;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		gunHandler.registerGuns();
+	}
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		if(event.getSide() == Side.CLIENT)
+		{
+			RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+		    
+	    	renderItem.getItemModelMesher().register(gunHandler.getRegisteredGuns(item), 0, new ModelResourceLocation(this.MODID + ":" + ((ItemGun) gunHandler.getRegisteredGuns).getName(), "inventory")));
+	}
+	
+	public void logInformation(String info)
+	{
+		
+	}
+
+}

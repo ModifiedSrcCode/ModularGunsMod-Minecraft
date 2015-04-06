@@ -1,0 +1,34 @@
+package com.kkp.mg2.render;
+
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.IItemRenderer;
+
+public class RenderGun implements IItemRenderer {
+
+	@Override
+	public boolean handleRenderType(ItemStack item, ItemRenderType type) 
+	{
+		switch (type.ordinal()) 
+		{
+    		case 1: 
+    		case 2: 
+    		return true;
+		}
+	    
+		return false;
+	}
+
+	@Override
+	public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item, ItemRendererHelper helper) {
+		
+		return false;
+		
+	}
+
+	@Override
+	public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

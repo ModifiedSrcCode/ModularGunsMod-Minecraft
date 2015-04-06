@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mg2",
+  "name": "Modular Guns 2.0",
+  "description": "My unannounced mod updated to Minecraft 1.8.. Which adds guns that are customizable in a unique way.",
+  "version": "v2.0.0",
+  "mcversion": "MC 1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ModifiedSrcCode"],
+  "credits": "ModifiedSrcCode (KewlaidKoloProductions/Me)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

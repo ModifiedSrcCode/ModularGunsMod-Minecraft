@@ -1,0 +1,14 @@
+package com.kkp.mg2.weaponry;
+
+public class CustomGun extends ItemGun {
+
+	public CustomGun(int aA, float r, float fD, float rT, float d, float zA) {
+		super(aA, r, fD, rT, d, zA);
+	}
+	
+	public void customize()
+	{
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.kkp.mg2.registry;
+
+import com.kkp.mg2.weaponry.ItemGun;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Bootstrap;
+import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+
+public class GunHandler extends RegistryHandler {
+	
+	public static Item m4;
+	
+	public GunHandler()
+	{
+		registerGuns();
+	}
+	
+	public static void registerGuns()
+	{
+		
+		m4 = new ItemGun(31, 1.25F, 3, 40, 9, 1).setCreativeTab(CreativeTabs.tabCombat);
+		registerGun(m4, "M4");
+		
+	}
+	
+}
